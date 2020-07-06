@@ -2,6 +2,7 @@ import os
 import requests
 import operator
 import re
+import nltk
 
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
