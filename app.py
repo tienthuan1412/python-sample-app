@@ -2,7 +2,6 @@ import os
 import requests
 import operator
 import re
-import nltk
 
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
@@ -16,6 +15,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 
 from models import Result
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
